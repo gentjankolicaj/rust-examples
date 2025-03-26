@@ -1,5 +1,4 @@
 fn main() {
-
     //==============================================================================================
     //Scalar types
     //==============================================================================================
@@ -30,7 +29,7 @@ fn main() {
 
     // Or a default will be used.
     let default_float = 3.0; // `f64`
-    let default_integer = 7;   // `i32`
+    let default_integer = 7; // `i32`
     println!("default_float: {}", default_float);
     println!("default_integer: {}", default_integer);
 
@@ -44,7 +43,6 @@ fn main() {
     let mut mutable = 0;
     mutable = 1;
     println!("mutable: {}", mutable);
-
 
     //===============================================================================================
     //COMPOUND TYPES

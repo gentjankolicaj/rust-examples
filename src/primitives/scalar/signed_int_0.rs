@@ -1,5 +1,4 @@
 fn main() {
-
     //declare variable with signed integer 2^8
     // range -2^7...2^7-1 else compile error
     // let a:i8 =200; compile error

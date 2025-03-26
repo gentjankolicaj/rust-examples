@@ -79,5 +79,9 @@ fn main() {
         a ^ b
     );
     println!("LEFT-SHIFT=> 1<<7 =[{},{:b}] ", 1i128 << 7, 1i128 << 7);
-    println!("RIGHT-SHIFT=> 127>>7 =[{},{:b}] ", 127i128 >> 6, 127i128 >> 6);
+    println!(
+        "RIGHT-SHIFT=> 127>>7 =[{},{:b}] ",
+        127i128 >> 6,
+        127i128 >> 6
+    );
 }

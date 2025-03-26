@@ -1,5 +1,4 @@
 fn main() {
-
     //1000
     let one_k = 1e3;
     println!("one_k: {}", one_k);

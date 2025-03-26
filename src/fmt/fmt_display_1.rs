@@ -1,6 +1,5 @@
 use std::fmt;
 
-
 //define structure with non-nameable fields
 //Drive Debug
 #[derive(Debug)]
@@ -12,7 +11,6 @@ impl fmt::Display for MinMax {
         write!(f, "[{} - {}]", self.0, self.1)
     }
 }
-
 
 // Define a structure where the fields are nameable for comparison.
 #[derive(Debug)]
@@ -35,7 +33,6 @@ fn main() {
     //print with debug & display
     println!("min-max display:{}", min_max);
     println!("min-max debug: {:?}", min_max);
-
 
     //a
     let a = Point2D { x: -99.0, y: 99.0 };

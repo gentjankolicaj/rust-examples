@@ -4,7 +4,6 @@ struct Person<'a> {
     age: u8,
 }
 
-
 fn main() {
     let name = "John doe";
     let age = 30;
@@ -14,5 +13,11 @@ fn main() {
     println!("first person details: {:#?}", person);
 
     //print second person
-    println!("Second person details: {:#?}", Person { name, age: age + 10 });
+    println!(
+        "Second person details: {:#?}",
+        Person {
+            name,
+            age: age + 10
+        }
+    );
 }

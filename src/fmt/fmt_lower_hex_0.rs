@@ -15,7 +15,11 @@ struct Person {
 
 impl fmt::Display for Person {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        write!(f, "fmt::Display Person  [id: {}, age: {}]", self.id, self.age)
+        write!(
+            f,
+            "fmt::Display Person  [id: {}, age: {}]",
+            self.id, self.age
+        )
     }
 }
 

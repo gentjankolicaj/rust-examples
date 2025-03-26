@@ -1,5 +1,4 @@
 fn main() {
-
     //declare variable with signed integer 2^8
     // range 0...2^8-1 else compile error
     // 0...255

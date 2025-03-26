@@ -1,5 +1,4 @@
 fn main() {
-
     //declare variable of type float 32 bit
     let a_32bit: f32 = 3.14;
 
