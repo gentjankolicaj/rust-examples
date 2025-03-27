@@ -8,8 +8,8 @@ fn main() {
     let int_array: [i32; 10] = [1; 10];
     println!("int_array: {:?}", int_array);
 
-    let left_slice: &[i32] =& int_array[0..5];
-    let right_slice: &[i32] =& int_array[5..10];
+    let left_slice: &[i32] = &int_array[0..5];
+    let right_slice: &[i32] = &int_array[5..10];
 
     //simple iteration in slices
     print!("left-slice:");
