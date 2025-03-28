@@ -13,7 +13,7 @@ struct Unit;
 struct Meter;
 
 #[derive(Debug, Copy, Clone)]
-struct Road( i64,Meter);
+struct Road(i64, Meter);
 
 #[derive(Debug, Copy, Clone)]
 struct House<'a> {
@@ -24,7 +24,7 @@ struct House<'a> {
 
 fn main() {
     let meter = Meter;
-    let house_road =Road( 101,meter);
+    let house_road = Road(101, meter);
     let house = House {
         id: 0,
         name: "House",
