@@ -1,4 +1,3 @@
-
 use crate::List::*;
 
 enum List {
@@ -47,10 +46,10 @@ impl List {
                 // `format!` is similar to `print!`, but returns a heap
                 // allocated string instead of printing to the console
                 format!("{}, {}", head, tail.stringify())
-            },
+            }
             Nil => {
                 format!("Nil")
-            },
+            }
         }
     }
 }

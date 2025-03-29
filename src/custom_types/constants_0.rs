@@ -5,17 +5,17 @@
 //5.The static lifetime is inferred and does not have to be specified. Accessing or modifying a mutable static variable is unsafe.
 
 //Global constants
-const A:f32 =3.14;
-static B:&str ="user";
+const A: f32 = 3.14;
+static B: &str = "user";
 
-fn local_consts(){
-     const C:i32=0;
-     static D:i32=1;
-    println!("Local constants: C= {}, D = {}", C,D);
+fn local_consts() {
+    const C: i32 = 0;
+    static D: i32 = 1;
+    println!("Local constants: C= {}, D = {}", C, D);
 }
 
-fn main(){
-    println!("Global constants : A={},B={}",A,B);
+fn main() {
+    println!("Global constants : A={},B={}", A, B);
     local_consts();
 }
 
