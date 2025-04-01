@@ -15,9 +15,8 @@ enum Role {
 
 fn main() {
     //Explicitly 'use' each enum variant so they are visible without manual scoping
-    use crate::Stage::{Advanced, Beginner};
-    use crate::Role::*; //use all enum variants of Role.
-
+    use crate::Role::*;
+    use crate::Stage::{Advanced, Beginner}; //use all enum variants of Role.
 
     //since I have 'use' above enum variants , enum variants a visible.
     let beginner = Beginner; //same as let beginner=Student::Beginner

@@ -1,8 +1,9 @@
 # rust-examples
 
 * rust-lang examples to illustrate various rust concepts and standard libs.
-* Note: I followed site https://doc.rust-lang.org/rust-by-example during example journey.While most of examples are mine,
- here you may find some example copied/mutated originating from https://doc.rust-lang.org/rust-by-example.
+* Note: I followed site https://doc.rust-lang.org/rust-by-example during example journey.While most of examples are
+  mine,
+  here you may find some example copied/mutated originating from https://doc.rust-lang.org/rust-by-example.
 
 - [formatting](/src/fmt)
 - [loops](/src/loops)

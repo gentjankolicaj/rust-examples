@@ -22,4 +22,3 @@ fn main() {
     println!("{:?}", zero);
     println!("{:?}", red);
 }
-

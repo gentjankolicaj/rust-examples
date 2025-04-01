@@ -18,5 +18,3 @@ fn main() {
     println!("Global constants : A={},B={}", A, B);
     local_consts();
 }
-
-
