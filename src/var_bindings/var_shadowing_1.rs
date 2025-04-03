@@ -3,6 +3,7 @@
 //3.The other case is when in block instead of having different type 'variable' we have reassignment.
 //4.NOTE: IN RUST WE SHADOW BINDING BETWEEN IDENTIFIER AND VARIABLE
 //5.So basically in RUST on variable bindings we have : ASSIGNMENT & SHADOWING.
+//6.Example : we can shadow variable binding a with  [ let a; or let mut a;]
 
 fn main() {
     let shadowed_binding = 1;

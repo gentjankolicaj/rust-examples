@@ -23,7 +23,6 @@ fn main() {
     // Error! Use of uninitialized binding
     //  println!("another binding: {}", another_binding);
 
-
     another_binding = 1;
 
     println!("another binding: {}", another_binding);

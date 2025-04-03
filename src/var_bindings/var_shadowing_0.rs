@@ -3,13 +3,14 @@
 //3.The other case is when in block instead of having different type 'variable' we have reassignment.
 //4.NOTE: IN RUST WE SHADOW BINDING BETWEEN IDENTIFIER AND VARIABLE
 //5.So basically in RUST on variable bindings we have : ASSIGNMENT & SHADOWING.
+//6.Example : we can shadow variable binding a with  [ let a; or let mut a;]
 
 fn main() {
     //declaration & initialization
     let variable_shadowing = 0;
     println!("variable_shadowing declared : {}", variable_shadowing);
 
-    //nested block
+    //first block
     {
         //variable shadowing here
         let variable_shadowing = "123r6";
@@ -18,11 +19,19 @@ fn main() {
             variable_shadowing
         );
     }
+
+    //second block
     {
-        //Second variable shadowing
-        let variable_shadowing = 3.14;
+        //Second variable binding,shadowing mutable
+        let mut variable_shadowing = 3.14;
         println!(
-            "inner-block2 variable shadowing with f32 {}",
+            "inner-block2 variable shadowing mutable with f32 {}",
+            variable_shadowing
+        );
+
+        variable_shadowing = variable_shadowing + 1.0;
+        println!(
+            "inner-block2 variable shadowing mutable with f32 {}",
             variable_shadowing
         );
     }
