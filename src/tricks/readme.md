@@ -1,0 +1,1 @@
+- In this directory place sample with some low-level programing tricks.
