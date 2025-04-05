@@ -2,7 +2,6 @@
 #![allow(overflowing_literals)]
 
 fn main() {
-
     // when casting any value to an unsigned type, T,
     // T::MAX + 1 is added or subtracted until the value
     // fits into the new type
@@ -48,5 +47,4 @@ fn main() {
     println!("-100.0 as u8 is : {}", -100.0_f32 as u8);
     // nan as u8 is 0
     println!("   nan as u8 is : {}", f32::NAN as u8);
-
 }

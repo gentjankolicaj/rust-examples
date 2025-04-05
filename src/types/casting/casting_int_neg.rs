@@ -8,7 +8,7 @@
 // let a_unsigned= a uint; => a_unsigned_value= a_value mod(max of uint)
 fn main() {
     //In this block I perform casting from i8 to u8
-    let a:i8 = -101;
+    let a: i8 = -101;
 
     //If a < 0 ,its modular arithmetic with m=256 => value is 155 because:
     // -101 mod(256)=>155
@@ -25,7 +25,7 @@ fn main() {
     let c_unsigned: u32 = a as u32;
 
     //u32 to i32
-    let c=c_unsigned as i32;
+    let c = c_unsigned as i32;
     println!("a: {}, a_unsigned: {}", a, a_unsigned);
     println!("b: {}, b_unsigned: {}", b, b_unsigned);
     println!("c_unsigned: {}, c: {}", c_unsigned, c);

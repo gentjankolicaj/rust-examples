@@ -23,7 +23,7 @@ fn main() {
     let c_unsigned: u32 = a as u32;
 
     //u32 to i32
-    let c=c_unsigned as i32;
+    let c = c_unsigned as i32;
     println!("a: {}, a_unsigned: {}", a, a_unsigned);
     println!("b: {}, b_unsigned: {}", b, b_unsigned);
     println!("c_unsigned: {}, c: {}", c_unsigned, c);

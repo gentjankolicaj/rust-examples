@@ -10,7 +10,7 @@ fn main() {
         let a_f32: f32 = 3.14;
         let a_f64: f64 = a_f32 as f64;
 
-        println!("a_f32:{} to a_f64:{}", a_f32,a_f64);
+        println!("a_f32:{} to a_f64:{}", a_f32, a_f64);
     }
 
     {
@@ -18,7 +18,6 @@ fn main() {
         let a_f64: f64 = 3.1423456723454567;
         let a_f32: f32 = a_f64 as f32;
 
-        println!("a_f64:{} to a_32:{}",a_f64,a_f32);
+        println!("a_f64:{} to a_32:{}", a_f64, a_f32);
     }
-
 }
