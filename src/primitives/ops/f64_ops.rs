@@ -5,8 +5,8 @@ fn main() {
     let mut d: f64 = 0.0;
 
     //print in different formats
-    println!("a in different bases=> decimal:{} ", a,);
-    println!("b in different bases=> decimal:{} ", b,);
+    println!("a in different bases=> decimal:{} ", a, );
+    println!("b in different bases=> decimal:{} ", b, );
 
     //arithmetic operators
     println!("arithmetic operators : ");
@@ -18,7 +18,7 @@ fn main() {
 
     //unary operators
     print!("unary operators : ");
-    println!("c in different bases=> decimal:{} ", c,);
+    println!("c in different bases=> decimal:{} ", c, );
     d = -c;
     println!("- c = {}", d);
 
