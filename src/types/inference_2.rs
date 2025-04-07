@@ -4,16 +4,17 @@
 //2.It does more than looking at the type of the value expression during an initialization.
 //3.It also looks at how the variable is used afterwards to infer its type.
 
+//STRUCT
 //Derive debug trait, for print
 #[derive(Debug)]
-struct User{
+struct User {
     id: i64,
     time_stamp: i64,
 }
 
 fn main() {
     //In below example compiler does 'type inference' of vec based on parameter type on function.
-    let john_doe =User{id:101,time_stamp:11111111};
+    let john_doe = User { id: 101, time_stamp: 11111111 };
 
     //Declare another variable 'v'
     //v is a empty growable array and it will hold values
