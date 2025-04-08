@@ -14,6 +14,7 @@
 - [3.0 var bindings](/src/var_bindings)
 - [4.0 types](/src/types)
 - [4.1 type casting](/src/types/casting)
+- [4.2 type inference](/src/types/inference)
 - [5.0 conversion](/src/conversion)
 - [6.0 expression](/src/expression)
 - [7.0 flow of control](/src/flow_control)
