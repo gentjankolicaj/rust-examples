@@ -15,6 +15,7 @@
 - [4.0 types](/src/types)
 - [4.1 type casting](/src/types/casting)
 - [4.2 type inference](/src/types/inference)
+- [4.3 type aliasing](/src/types/aliasing)
 - [5.0 conversion](/src/conversion)
 - [6.0 expression](/src/expression)
 - [7.0 flow of control](/src/flow_control)
