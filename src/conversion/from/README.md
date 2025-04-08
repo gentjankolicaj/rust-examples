@@ -5,7 +5,7 @@ mechanism for converting between several types.
 There are numerous implementations of this trait within the standard library for conversion of primitive and common
 types.
 
-- For example we can easily convert a str into a
+- For example we can easily convert a str into a String
 
 ```
 let my_str = "hello";
