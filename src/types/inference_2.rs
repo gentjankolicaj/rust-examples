@@ -14,7 +14,10 @@ struct User {
 
 fn main() {
     //In below example compiler does 'type inference' of vec based on parameter type on function.
-    let john_doe = User { id: 101, time_stamp: 11111111 };
+    let john_doe = User {
+        id: 101,
+        time_stamp: 11111111,
+    };
 
     //Declare another variable 'v'
     //v is a empty growable array and it will hold values

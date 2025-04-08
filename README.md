@@ -19,4 +19,5 @@
 - [7.0 flow of control](/src/flow_control)
 - [7.1 if else](/src/if_else)
 - [7.2 loops](/src/loops)
-- [tricks](/src/tricks)(sample with tricks) 
+- [tricks](/src/tricks) (Programing trick samples)
+- [exe](/src/exe) (Executable samples)
