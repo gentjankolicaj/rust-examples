@@ -12,3 +12,10 @@ The 'From' and 'Into' traits are inherently linked, and this is actually part of
 
 If you are able to convert type A from type B, then it should be easy to believe that we should be able to convert type
 B to type A.
+
+- From and Into are interchangeable
+
+- From and Into are designed to be complementary.
+- We do not need to provide an implementation for both traits. 
+- If you have implemented the From trait for your type, Into will call it when necessary. 
+- Note, however, that the converse is not true: implementing Into for your type will not automatically provide it with an implementation of From.
