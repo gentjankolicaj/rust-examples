@@ -4,22 +4,21 @@
 use std::convert::Into;
 
 #[derive(Debug)]
-struct Number{
+struct Number {
     value: i32,
 }
 
-impl Into<Number> for i32{
-    fn into(self) -> Number{
-        return Number{value:self};
+impl Into<Number> for i32 {
+    fn into(self) -> Number {
+        return Number { value: self };
     }
 }
 
-fn main(){
+fn main() {
     //integer variable binding
-    let a=1;;
+    let a = 1;
 
     //Convert primitive type into custom type
-    let b:Number=a.into();
-    print!("primitive a={},custom-type b={:?}",a,b);
+    let b: Number = a.into();
+    print!("primitive a={},custom-type b={:?}", a, b);
 }
-
