@@ -36,6 +36,7 @@ fn main() {
     let c = 3i32;
     let d = 4i64;
 
+    //Integer instances from integer types
     let ia = Integer::from(a);
     let ib = Integer::from(b);
     let ic = Integer::from(c);

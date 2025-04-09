@@ -55,6 +55,7 @@ fn main() {
     let d = 4i64;
     let e = 5i128;
 
+    //Long instances from integer types.
     let la = Long::from(a);
     let lb = Long::from(b);
     let lc = Long::from(c);
