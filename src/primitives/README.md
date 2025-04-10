@@ -10,10 +10,12 @@ Scalar Types
     bool either true or false
     The unit type (), whose only possible value is an empty tuple: ()
 
-Despite the value of a unit type being a tuple, it is not considered a compound type because it does not contain multiple values.
+Despite the value of a unit type being a tuple, it is not considered a compound type because it does not contain
+multiple values.
 Compound Types
 
     Arrays like [1, 2, 3]
     Tuples like (1, true)
 
-Variables can always be type annotated. Numbers may additionally be annotated via a suffix or by default. Integers default to i32 and floats to f64. Note that Rust can also infer types from context.
+Variables can always be type annotated. Numbers may additionally be annotated via a suffix or by default. Integers
+default to i32 and floats to f64. Note that Rust can also infer types from context.
