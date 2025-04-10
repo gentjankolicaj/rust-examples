@@ -20,6 +20,7 @@
 - [5.1 conversion trait 'From'](/src/conversion/from)
 - [5.2 conversion trait 'Into'](/src/conversion/into)
 - [5.3 conversion traits 'TryFrom & TryInto'](/src/conversion/try)
+- [5.4 conversion string traits 'ToString, Display, parse(), parse::<Type>() '](/src/conversion/try)
 - [6.0 expression](/src/expression)
 - [7.0 flow of control](/src/flow_control)
 - [7.1 if else](/src/if_else)
