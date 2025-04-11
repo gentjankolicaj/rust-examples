@@ -1,6 +1,6 @@
 ## Primitives
 
-Rust provides access to a wide variety of primitives. A sample includes:
+rust-lang provides access to a wide variety of primitives. A sample includes:
 Scalar Types
 
     Signed integers: i8, i16, i32, i64, i128 and isize (pointer size)
@@ -18,4 +18,4 @@ Compound Types
     Tuples like (1, true)
 
 Variables can always be type annotated. Numbers may additionally be annotated via a suffix or by default. Integers
-default to i32 and floats to f64. Note that Rust can also infer types from context.
+default to i32 and floats to f64. Note that rust-lang can also infer types from context.

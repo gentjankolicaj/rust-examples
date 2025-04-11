@@ -1,4 +1,4 @@
-//1.Rust has 2 types of constants which can be declared in any scope including global.
+//1.rust-lang has 2 types of constants which can be declared in any scope including global.
 //2.Two types of constants are : const & static.
 //3.'const' unchangeable value
 //4.'static' a possible mutable value with static lifetime.

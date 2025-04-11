@@ -1,6 +1,6 @@
 ## Expressions
 
-A Rust program is (mostly) made up of a series of statements:
+A rust-lang program is (mostly) made up of a series of statements:
 
 ```
 fn main() {
@@ -10,7 +10,8 @@ fn main() {
 }
 ```
 
-There are a few kinds of statements in Rust. The most common two are declaring a variable binding, and using a ; with an
+There are a few kinds of statements in rust-lang. The most common two are declaring a variable binding, and using a ;
+with an
 expression:
 
 ```

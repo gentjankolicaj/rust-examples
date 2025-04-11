@@ -2,7 +2,7 @@
 #![allow(overflowing_literals)]
 
 fn main() {
-    // Since Rust 1.45, the `as` keyword performs a *saturating cast*
+    // Since rust-lang 1.45, the `as` keyword performs a *saturating cast*
     // when casting from float to int. If the floating point value exceeds
     // the upper bound or is less than the lower bound, the returned value
     // will be equal to the bound crossed.

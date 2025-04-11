@@ -48,7 +48,7 @@ fn main() {
     //COMPOUND TYPES
     //==============================================================================================
 
-    //Rust arrays
+    //rust-lang arrays
     //declaration array ::=let identifier:[type;length]
     //declaration and initialization array::=let identifier:[type;length]=[v1,v2...]
     let _null_array: [i32; 0];

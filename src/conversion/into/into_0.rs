@@ -1,4 +1,4 @@
-//1.In Rust we have interchangeable traits 'From' and 'Into' that we need to implement in order to convert custom types.
+//1.In rust-lang we have interchangeable traits 'From' and 'Into' that we need to implement in order to convert custom types.
 //2.For primitive types however conversion is done with casting.
 
 use std::convert::Into;

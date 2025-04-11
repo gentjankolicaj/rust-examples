@@ -36,7 +36,7 @@ fn main() {
     // and the value of 232 in 8-bit two's complement representation is -24
     println!(" 232 as a i8 is : {}", 232 as i8);
 
-    // Since Rust 1.45, the `as` keyword performs a *saturating cast*
+    // Since rust-lang 1.45, the `as` keyword performs a *saturating cast*
     // when casting from float to int. If the floating point value exceeds
     // the upper bound or is less than the lower bound, the returned value
     // will be equal to the bound crossed.

@@ -1,8 +1,8 @@
-//1.Casting is explicit type conversion of primitives in Rust.
-//2.Rust does not provide implicit type casting (coercion) between primitives.
+//1.Casting is explicit type conversion of primitives in rust-lang.
+//2.rust-lang does not provide implicit type casting (coercion) between primitives.
 //3.CASTING BNF => let casted_var= a as type.Example: let b= a as u8;
 //4.Rules for converting between integral types follow C conventions generally, except in cases where C has undefined behavior.
-//5.The behavior of all casts between integral types is well defined in Rust.
+//5.The behavior of all casts between integral types is well defined in rust-lang.
 
 fn main() {
     {

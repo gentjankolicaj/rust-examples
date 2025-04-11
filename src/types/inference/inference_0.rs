@@ -1,6 +1,6 @@
 //NOTE: In programming 'Type-Inference' refers to process of automatically
 // assigning a type to each expression in a program based on context and structure of program.
-//1.In Rust 'type-inference' engine is smart.
+//1.In rust-lang 'type-inference' engine is smart.
 //2.It does more than looking at the type of the value expression during an initialization.
 //3.It also looks at how the variable is used afterwards to infer its type.
 

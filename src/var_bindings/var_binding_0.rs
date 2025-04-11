@@ -1,6 +1,6 @@
-//1.Rust provides type safety via static typing.
+//1.rust-lang provides type safety via static typing.
 //2.Variable bindings can be type 'annotated' when declared.
-//3.Rust also can infer type of variable based on context.
+//3.rust-lang also can infer type of variable based on context.
 
 fn main() {
     //variable type binding

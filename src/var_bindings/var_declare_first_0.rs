@@ -1,5 +1,5 @@
-//1.In Rust is possible to declare variable bindings (identifiers) first and initialize them later
-//2.In Rust all variable bindings must be initialized before they are used.
+//1.In rust-lang is possible to declare variable bindings (identifiers) first and initialize them later
+//2.In rust-lang all variable bindings must be initialized before they are used.
 //3.Compiler forbids use of uninitialized var bindings as it would lead to undefined behaviour.
 //4.It is not common to declare a variable binding and initialize it later in the function or block
 //5.It is more difficult for a reader to find the initialization when initialization is separated from declaration.

@@ -1,4 +1,4 @@
-//1.In Rust we use 'type' keyword to give a new name to existing types.
+//1.In rust-lang we use 'type' keyword to give a new name to existing types.
 //2.New names of existing type (aliases) must be UpperCamelCase or compiler will throw compile warning.
 //3.Exception to naming rules 2 are aliases (new names) for primitive types: Ex: type I8 as i8;
 

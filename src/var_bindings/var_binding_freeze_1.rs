@@ -1,4 +1,4 @@
-//1.In Rust basically we can freeze a mutable variable binding with (shadowing by immutable & reassignment on same time)
+//1.In rust-lang basically we can freeze a mutable variable binding with (shadowing by immutable & reassignment on same time)
 //2.Example : we can shadow variable binding a with  [ let a; or let mut a;]
 
 fn main() {

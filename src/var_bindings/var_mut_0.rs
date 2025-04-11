@@ -1,4 +1,4 @@
-//1.In Rust variable bindings are immutable by default.Ex. let A=value; => A is immutable
+//1.In rust-lang variable bindings are immutable by default.Ex. let A=value; => A is immutable
 //2.Variable binding mutability can be changed with keyword 'mut'.
 //3.Keyword 'mut' makes variable mutable.BNF of 'mut' :
 /**

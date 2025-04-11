@@ -1,5 +1,5 @@
-//1.In Rust we have variable 'shadowing'
-//2.In Rust variable 'shadowing' is a case when on a block we have same identifier for different type variable (sort of redeclaration).
+//1.In rust-lang we have variable 'shadowing'
+//2.In rust-lang variable 'shadowing' is a case when on a block we have same identifier for different type variable (sort of redeclaration).
 //3.The other case is when in block instead of having different type 'variable' we have reassignment.
 //4.NOTE: IN RUST WE SHADOW BINDING BETWEEN IDENTIFIER AND VARIABLE
 //5.So basically in RUST on variable bindings we have : ASSIGNMENT & SHADOWING.
