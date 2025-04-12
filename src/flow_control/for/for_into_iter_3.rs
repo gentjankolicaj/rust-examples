@@ -15,6 +15,5 @@ fn main() {
         }
     }
 
-
     println!("names: {:?}", names);
 }

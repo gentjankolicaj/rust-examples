@@ -24,3 +24,7 @@ into_iter, iter and iter_mut all handle the conversion of a collection into an i
 
 - into_iter - This consumes the collection so that on each iteration the exact data is provided.
 - Once the collection has been consumed it is no longer available for reuse as it has been 'moved' within the loop.
+
+<br>
+
+- iter_mut - This mutably borrows each element of the collection, allowing for the collection to be modified in place.
