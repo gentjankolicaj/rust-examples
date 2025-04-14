@@ -12,14 +12,23 @@ fn main() {
     //destruct tuple in match
     match pair {
         (0, b) => {
-            println!("tuple-struct vars: a={},b={} where b is destructed var of Pair", 0, b);
+            println!(
+                "tuple-struct vars: a={},b={} where b is destructed var of Pair",
+                0, b
+            );
         }
         (a, 0) => {
-            println!("tuple-struct vars: a={},b={} where a is destructed var of Pair", a, 0);
+            println!(
+                "tuple-struct vars: a={},b={} where a is destructed var of Pair",
+                a, 0
+            );
         }
         (a, b) => {
             //This is going to be printed because of full destructing tuple-struct
-            println!("tuple-struct vars: a={},b={} where a,b are destructed vars of Pair", a, b);
+            println!(
+                "tuple-struct vars: a={},b={} where a,b are destructed vars of Pair",
+                a, b
+            );
         }
         _ => {
             println!("unreachable because of (a,b) arm");
