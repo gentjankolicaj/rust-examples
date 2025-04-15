@@ -12,3 +12,9 @@ A match block can destructure items in a variety of ways.
 - Destructuring Enums
 - Destructuring Pointers
 - Destructuring Structures
+
+## pointers/ref
+For pointers, a distinction needs to be made between destructuring and dereferencing as they are different concepts which are used differently from languages like C/C++.
+
+- Dereferencing uses *
+- Destructuring uses &, ref, and ref mut
