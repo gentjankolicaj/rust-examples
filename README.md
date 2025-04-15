@@ -30,6 +30,7 @@
 - [7.5 match ](/src/flow/match)
 - [7.5.1 match destructing ](/src/flow/match/destructing)
 - [7.5.2 match guard ](/src/flow/match/guard)
+- [7.5.3 match binding ](/src/flow/match/binding)
 - [7.6 while ](/src/flow/while)
 - [tricks](/src/tricks) (Programing trick samples)
 - [exe](/src/exe) (Executable samples)
