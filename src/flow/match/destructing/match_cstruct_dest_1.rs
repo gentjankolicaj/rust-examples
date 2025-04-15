@@ -14,7 +14,6 @@ struct Foo {
 }
 
 fn main() {
-
     // Try changing the values in the struct to see what happens
     let foo = Foo { x: (1, 2), y: 3 };
 
@@ -43,6 +42,11 @@ fn main() {
     }
 
     let bar = Bar { foo: faa };
-    let Bar { foo: Foo { x: nested_x, y: nested_y } } = bar;
+    let Bar {
+        foo: Foo {
+            x: nested_x,
+            y: nested_y,
+        },
+    } = bar;
     println!("Nested: nested_x = {nested_x:?}, nested_y = {nested_y:?}");
 }

@@ -8,9 +8,7 @@
 //8.'match' can be used to destruct c-structs
 //9.'match' can be used to destruct reference with (&, ref, and ref mut)
 
-
 fn main() {
-
     // Rust provides `ref` for exactly this purpose. It modifies the
     // assignment so that a reference is created for the element; this
     // reference is assigned.
@@ -33,8 +31,6 @@ fn main() {
             // add anything to it.
             *m += 10;
             println!("We added 10. `mut_value`: {:?}", m);
-        },
+        }
     }
-
-
 }

@@ -8,7 +8,6 @@
 //8.'match' can be used to destruct c-structs
 //9.'match' can be used to destruct reference with (&, ref, and ref mut)
 
-
 //Define c-struct
 #[derive(Debug)]
 struct Foo {
@@ -17,9 +16,8 @@ struct Foo {
 }
 
 fn main() {
-
     //instantiate Foo and assign a reference value
-    let reference=&Foo{x: (1, 2), y: 3};
+    let reference = &Foo { x: (1, 2), y: 3 };
 
     //destructing of reference with match
     match reference {
@@ -37,6 +35,4 @@ fn main() {
         // should be assigned to `val`.
         val => println!("Got a value via destructuring and dereference : {:?}", *val),
     }
-
-
 }

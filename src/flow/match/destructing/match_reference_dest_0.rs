@@ -9,9 +9,8 @@
 //9.'match' can be used to destruct reference with (&, ref, and ref mut)
 
 fn main() {
-
     //assign a reference to a primitive type i32
-   let reference=&10; //of type i32 reference
+    let reference = &10; //of type i32 reference
 
     match reference {
         // If `reference` is pattern matched against `&val`, it results in a comparison like: `&i32` and `&val`
@@ -24,6 +23,4 @@ fn main() {
     match *reference {
         val => println!("Got a value via dereferencing: {:?}", val),
     }
-
-
 }
