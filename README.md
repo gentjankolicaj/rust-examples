@@ -32,6 +32,7 @@
 - [7.5.2 match guard ](/src/flow/match/guard)
 - [7.5.3 match binding ](/src/flow/match/binding)
 - [7.6 while ](/src/flow/while)
+- [8 functions](/src/functions)
 - [a references](/src/references) (Reference samples with different types)
 - [b tricks](/src/tricks) (Programing trick samples)
 - [c exe](/src/exe) (Executable samples)
