@@ -12,15 +12,21 @@ struct Case {
 //implementation block where all Case methods
 impl Case {
     fn case0(&self) {
-        println!("id={},case0 no args,no returns",self.id);
+        println!("id={},case0 no args,no returns", self.id);
     }
 
-    fn case1(&self,arg0: bool, arg1: i8) {
-        println!("id={},case1 arg0={},arg1={}, no returns",self.id, arg0, arg1);
+    fn case1(&self, arg0: bool, arg1: i8) {
+        println!(
+            "id={},case1 arg0={},arg1={}, no returns",
+            self.id, arg0, arg1
+        );
     }
 
-    fn case2(&self,arg0: i8, arg1: i8) -> bool {
-        println!("id={},case2 arg0={},arg1={}, bool return", self.id,arg0, arg1);
+    fn case2(&self, arg0: i8, arg1: i8) -> bool {
+        println!(
+            "id={},case2 arg0={},arg1={}, bool return",
+            self.id, arg0, arg1
+        );
 
         //final expression in fn is used as return value
         return true;

@@ -9,21 +9,27 @@
 enum Color {
     RED,
     GREEN,
-    BLUE
+    BLUE,
 }
 
 //implementation block where all Color methods
 impl Color {
     fn case0(&self) {
-        println!("color={:?},case0 no args,no returns",self);
+        println!("color={:?},case0 no args,no returns", self);
     }
 
-    fn case1(&self,arg0: bool, arg1: i8) {
-        println!("color={:?},case1 arg0={},arg1={}, no returns",self, arg0, arg1);
+    fn case1(&self, arg0: bool, arg1: i8) {
+        println!(
+            "color={:?},case1 arg0={},arg1={}, no returns",
+            self, arg0, arg1
+        );
     }
 
-    fn case2(&self,arg0: i8, arg1: i8) -> bool {
-        println!("color={:?},case2 arg0={},arg1={}, bool return", self,arg0, arg1);
+    fn case2(&self, arg0: i8, arg1: i8) -> bool {
+        println!(
+            "color={:?},case2 arg0={},arg1={}, bool return",
+            self, arg0, arg1
+        );
 
         //final expression in fn is used as return value
         return true;
@@ -32,7 +38,7 @@ impl Color {
 
 fn main() {
     //non mutable variable red of type Color (enum)
-    let red= Color::RED;
+    let red = Color::RED;
 
     //call methods
     red.case0();

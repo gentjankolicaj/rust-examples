@@ -33,6 +33,7 @@
 - [7.5.3 match binding ](/src/flow/match/binding)
 - [7.6 while ](/src/flow/while)
 - [8 functions](/src/functions)
+- [8.1 function closures](/src/functions/closure)
 - [a references](/src/references) (Reference samples with different types)
 - [b tricks](/src/tricks) (Programing trick samples)
 - [c exe](/src/exe) (Executable samples)
