@@ -56,3 +56,30 @@ FnOnce: the closure uses the captured value by value (T)
   true.
 - If the parameter is annotated as Fn, then capturing variables by &mut T or T are not allowed.However, &T is allowed.
 
+## Type anonymity
+
+- Closures succinctly capture variables from enclosing scopes.
+- Does this have any consequences? It surely does.
+- Observe how using a closure as a function parameter requires generics, which is necessary because of how they are
+  defined:
+
+```
+// `F` must be generic.
+fn apply<F>(f: F) where
+    F: FnOnce() {
+    f();
+}
+```
+
+- When a closure is defined, the compiler implicitly creates a new anonymous structure to store the captured variables
+  inside, meanwhile implementing the functionality via one of the traits: Fn, FnMut, or FnOnce for this unknown type.
+- This type is assigned to the variable which is stored until calling.
+- Since this new type is of unknown type, any usage in a function will require generics.
+- However, an unbounded type parameter <T> would still be ambiguous and not be allowed.
+- Thus, bounding by one of the traits: Fn, FnMut, or FnOnce (which it implements) is sufficient to specify its type.
+
+## Input functions
+
+- Since closures may be used as arguments, you might wonder if the same can be said about functions.
+- And indeed they can! If you declare a function that takes a closure as parameter, then any function that satisfies the
+  trait bound of that closure can be passed as a parameter.
