@@ -5,7 +5,6 @@
 3.by value: T
 */
 
-
 fn main() {
     let mut count = 0;
     // A closure to increment `count` could take either `&mut count` or `count`

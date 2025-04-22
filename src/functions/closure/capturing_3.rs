@@ -22,7 +22,6 @@ fn main() {
     // A move or reborrow is allowed after the final use of `print`
     let _color_moved = color;
 
-
     let mut count = 0;
     // A closure to increment `count` could take either `&mut count` or `count`
     // but `&mut count` is less restrictive so it takes that. Immediately
@@ -47,7 +46,6 @@ fn main() {
     // The closure no longer needs to borrow `&mut count`. Therefore, it is
     // possible to reborrow without an error
     let _count_reborrowed = &mut count;
-
 
     // A non-copy type.
     let movable = Box::new(3);
