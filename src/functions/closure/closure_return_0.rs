@@ -16,9 +16,10 @@ fn closure_output_function() -> impl FnOnce() {
     //declare variable, by default variables are immutable.
     let int = 10;
 
-
     //create closure.
-    let var = move || { println!("closure called with value:{}", int); };
+    let var = move || {
+        println!("closure called with value:{}", int);
+    };
 
     //return closure
     var

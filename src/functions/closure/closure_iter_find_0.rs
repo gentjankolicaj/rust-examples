@@ -12,8 +12,14 @@ FnOnce: the closure uses the captured value by value (T)
 fn main() {
     let a_array = [1, 2, 3, 4];
     //iter() yields of &i32
-    println!("Find 2 in a_array : {:?}", a_array.iter().find(|&&x| x == 2));
+    println!(
+        "Find 2 in a_array : {:?}",
+        a_array.iter().find(|&&x| x == 2)
+    );
 
     //into_iter() yield type i32
-    println!("Find 2 in a_array : {:?}", a_array.into_iter().find(|&x| *x == 2));
+    println!(
+        "Find 2 in a_array : {:?}",
+        a_array.into_iter().find(|&x| *x == 2)
+    );
 }

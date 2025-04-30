@@ -10,20 +10,11 @@ FnOnce: the closure uses the captured value by value (T)
 //4.In rust-lang 'move' keyword when be used, signals that all captures occur by value
 
 fn main() {
-    let a_vec = vec![1, 2, 3, 4];
-    //iter() yields of &i32
-    println!(
-        "a_vec has 2 by reference : {}",
-        a_vec.iter().any(|&x| x == 2)
-    );
+    let a_array = [1, 2, 3, 4];
 
-    //into_iter() yield type i32
-    println!(
-        "a_vec has 2 by value : {}",
-        a_vec.into_iter().any(|x| x == 2)
-    );
+    let two_idx = a_array.iter().position(|&x| x == 2);
+    println!("two_idx={:?}", two_idx);
 
-    //iter_mut() for yield type &mut i32, thats why we need to deference with '*'
-    //can'b be borrowed as mutable, a_vec must be mutable
-    // println!("a_vec has 2 by reference : {}",a_vec.iter_mut().any(|x| *x == 2));
+    let three_idx = a_array.into_iter().position(|x| *x == 3);
+    println!("three_idx={:?}", three_idx);
 }

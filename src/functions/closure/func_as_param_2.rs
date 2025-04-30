@@ -1,6 +1,5 @@
 static TWO: i32 = 2;
 
-
 fn apply_i32<F: Fn(i32) -> i32>(f: F, x: i32) {
     let val = f(x);
     println!("apply_i32 finished with value={}.", val);
@@ -20,7 +19,6 @@ fn main() {
 
         sum //return sum;
     };
-
 
     //apply i32 function & closure
     apply_i32(i32_func, 3);

@@ -12,11 +12,20 @@ FnOnce: the closure uses the captured value by value (T)
 fn main() {
     let mut a_array = [1, 2, 3, 4];
     //iter() for arrays yields of &i32
-    println!("a_array has 2 by reference : {}", a_array.iter().any(|&x| x == 2));
+    println!(
+        "a_array has 2 by reference : {}",
+        a_array.iter().any(|&x| x == 2)
+    );
 
     //into_iter() for arrays yield type i32
-    println!("a_array has 2 by value : {}", a_array.into_iter().any(|x| *x == 2));
+    println!(
+        "a_array has 2 by value : {}",
+        a_array.into_iter().any(|x| *x == 2)
+    );
 
     //iter_mut() for yield type &mut i32, thats why we need to deference with '*'
-    println!("a_array has 2 by reference : {}", a_array.iter_mut().any(|x| *x == 2));
+    println!(
+        "a_array has 2 by reference : {}",
+        a_array.iter_mut().any(|x| *x == 2)
+    );
 }

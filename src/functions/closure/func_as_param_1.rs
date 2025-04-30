@@ -18,7 +18,9 @@ fn i32_func(i: i32) {
 }
 
 fn main() {
-    let void_closure = || { println!("void_closure called"); };
+    let void_closure = || {
+        println!("void_closure called");
+    };
     let i32_closure = |x| {
         let sum = x + TWO;
         println!("i32_closure called, sum={}", sum);
