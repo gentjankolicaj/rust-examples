@@ -81,5 +81,62 @@ fn apply<F>(f: F) where
 ## Input functions
 
 - Since closures may be used as arguments, you might wonder if the same can be said about functions.
-- And indeed they can! If you declare a function that takes a closure as parameter, then any function that satisfies the
-  trait bound of that closure can be passed as a parameter.
+- And indeed they can! If you declare a function that takes a closure as parameter.
+- Any function that satisfies the trait bound of that closure can be passed as a parameter.
+
+## output parameters
+
+- Closures as input parameters are possible, so returning closures as output parameters should also be possible.
+- However, anonymous closure types are, by definition, unknown, so we have to use impl Trait to return them.
+
+```
+The valid traits for returning a closure are:
+Fn
+FnMut
+FnOnce
+```
+
+- Beyond this, the move keyword must be used, which signals that all captures occur by value.
+- This is required because any captures by reference would be dropped as soon as the function exited, leaving invalid
+  references in the closure.
+
+## Iterator::any
+
+Iterator::any is a function which when passed an iterator, will return true if any element satisfies the predicate.
+Otherwise false. Its signature:
+
+```
+pub trait Iterator {
+    // The type being iterated over.
+    type Item;
+
+    // `any` takes `&mut self` meaning the caller may be borrowed
+    // and modified, but not consumed.
+    fn any<F>(&mut self, f: F) -> bool where
+        // `FnMut` meaning any captured variable may at most be
+        // modified, not consumed. `Self::Item` states it takes
+        // arguments to the closure by value.
+        F: FnMut(Self::Item) -> bool;
+}
+```
+
+## Searching through iterators
+
+- Iterator::find is a function which iterates over an iterator and searches for the first value which satisfies some
+  condition.
+- If none of the values satisfy the condition, it returns None. Its signature:
+
+```
+pub trait Iterator {
+    // The type being iterated over.
+    type Item;
+
+    // `find` takes `&mut self` meaning the caller may be borrowed
+    // and modified, but not consumed.
+    fn find<P>(&mut self, predicate: P) -> Option<Self::Item> where
+        // `FnMut` meaning any captured variable may at most be
+        // modified, not consumed. `&Self::Item` states it takes
+        // arguments to the closure by reference.
+        P: FnMut(&Self::Item) -> bool;
+}
+```
