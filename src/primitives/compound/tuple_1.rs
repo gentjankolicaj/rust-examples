@@ -1,11 +1,17 @@
-//1.A tuple is a collection of values of different types.
-//2.Tuples are constructed using parenthesis.
-//3.Each tuple itself is a value with type signature (T1,T2,T3...) where T1,T2 are types of its members.
-//4.Functions can use tuples to return values as tuples hold any number of values.
 
-fn main() {
-    let one_element_tuple = (10i8,);
-    println!("one_element_tuple= {:?}", one_element_tuple);
 
-    println!("implicit one_element_tuple= {:?}", (101));
+fn main(){
+    //declaration
+    //initialization separately
+    //tuple with annotated types
+    let inferred:(bool,bool);
+    inferred=(true,false);
+    println!("tuple (declaration * initialization separately) with annotated type values: {:?}",inferred);
+
+    //declaration
+    //initialization separately
+    //tuple with annotated types
+    let annotated:(bool,i32,bool,f32);
+    annotated=(true,1,false,3.14);
+    println!("tuple (declaration * initialization separately) with annotated type values: {:?}",annotated);
 }
