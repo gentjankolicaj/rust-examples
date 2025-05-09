@@ -40,14 +40,18 @@ Other characteristics of closures include:
 - HOFs and lazy iterators give Rust its functional flavor.
 
 ## Diverging functions
-- Diverging functions never return. 
+
+- Diverging functions never return.
 - They are marked using !, which is an empty type.
+
 ```
 fn foo() -> ! {
     panic!("This call never returns.");
 }
 ```
-- As opposed to all the other types, this one cannot be instantiated, because the set of all possible values this type can have is empty.
+
+- As opposed to all the other types, this one cannot be instantiated, because the set of all possible values this type
+  can have is empty.
 - Note that, it is different from the () type, which has exactly one possible value.
 - For example, this function returns as usual, although there is no information in the return value.
 
@@ -61,7 +65,9 @@ fn main() {
     println!("This function returns and you can see this line.");
 }
 ```
+
 - As opposed to this function, which will never return the control back to the caller.
+
 ```
 #![feature(never_type)]
 
@@ -72,7 +78,8 @@ println!("You will never see this line!");
 ```
 
 - Although this might seem like an abstract concept, it is actually very useful and often handy.
-- The main advantage of this type is that it can be cast to any other type, making it versatile in situations where an exact type is required, such as in match branches.
+- The main advantage of this type is that it can be cast to any other type, making it versatile in situations where an
+  exact type is required, such as in match branches.
 - This flexibility allows us to write code like this:
 
 ```

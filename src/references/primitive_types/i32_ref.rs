@@ -28,5 +28,4 @@ fn main() {
     // *b_ref=*b_ref+1;
     // println!("after b_ref=b_ref+1 , b = {},b_ref={}",b,b_ref);
     //
-
 }

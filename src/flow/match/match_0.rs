@@ -27,9 +27,9 @@ fn main() {
         }
         _ =>
         //do something here
-            {
-                111 //If I place ';' match expression returns ().
-            }
+        {
+            111 //If I place ';' match expression returns ().
+        }
     }; //Since is an expression I have to close it
 
     //below match expression is used in assigment statement

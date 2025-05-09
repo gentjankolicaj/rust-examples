@@ -38,3 +38,6 @@
 - [a references](/src/references) (Reference samples with different types)
 - [b tricks](/src/tricks) (Programing trick samples)
 - [c exe](/src/exe) (Executable samples)
+- [d array](/src/array)(Array samples)
+- [e vector](/src/vector)(Vector samples)
+
