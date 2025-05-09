@@ -6,12 +6,24 @@
 // <module-items> ::= { <module-item> }
 // <module-item> ::=  <function> | <struct> | <enum> | <trait> | <module>
 
-use a::Greetable;
+use parent::Greetable;
 
-mod a {
+mod parent {
 
     pub fn info() {
-        println!("function a() in module A");
+        println!("function info() in module parent");
+    }
+
+    // Items in modules default to private visibility.
+    fn private_func() {
+        println!("called `parent::private_func()`");
+    }
+
+    pub fn info_indirect() {
+        println!("called `parent::info_private()`");
+        private_func();
+
+        nested::info2();
     }
 
     //tuple-like struct
@@ -29,29 +41,34 @@ mod a {
         fn greet(&self);
     }
 
-    pub mod b {
+    pub mod nested {
         pub fn info() {
-            println!("function b() in module B, inside module a");
+            println!("function info() in module nested, inside module parent");
+        }
+        // Functions declared using `pub(super)` syntax are only visible within,the parent module
+        pub(super) fn info2() {
+            println!("function info2() in module 'nested', inside module 'parent'.pub(super)=>only visible within,the 'parent' module");
         }
     }
 }
 
 fn main() {
-    //call items of module a
-    a::info();
-    let a_pair = a::Pair(0, 1);
-    let a_color = a::Color::Red;
-    println!("a_color = {:?}", a_color);
-    println!("a_pair = {:?}", a_pair);
+    //call items of module parent
+    parent::info();
+    parent::info_indirect();
+    let parent_pair = parent::Pair(0, 1);
+    let parent_color = parent::Color::Red;
+    println!("parent_color = {:?}", parent_color);
+    println!("parent_pair = {:?}", parent_pair);
 
     //implement trait for struct Pair
-    impl Greetable for a::Pair {
+    impl Greetable for parent::Pair {
         fn greet(&self) {
             println!("Implemented Greetable trait for struct Pair!");
         }
     }
-    a_pair.greet();
+    parent_pair.greet();
 
-    //call items of module b
-    a::b::info();
+    //call items of module nested
+    parent::nested::info();
 }

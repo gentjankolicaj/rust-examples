@@ -6,10 +6,10 @@
 // <module-items> ::= { <module-item> }
 // <module-item> ::=  <function> | <struct> | <enum> | <trait> | <module>
 
-mod a {
+mod parent {
 
     fn info() {
-        println!("function a() in module A");
+        println!("function info() in module parent");
     }
 
     //tuple-like struct
@@ -25,29 +25,29 @@ mod a {
         fn greet(&self);
     }
 
-    mod b {
+    mod nested {
         fn info() {
-            println!("function b() in module B, inside module a");
+            println!("function info() in module nested, inside module parent");
         }
     }
 }
 
 fn main() {
-    //call items of module a
-    // a::info(); //compile error because of private visibility
-    // let a_pair= a::Pair(0,1); //compile error because of private visibility
-    // let a_color= a::Color::Red; //compile error because of private visibility
+    //call items of module parent
+    // parent::info(); //compile error because of private visibility
+    // let parent_pair= parent::Pair(0,1); //compile error because of private visibility
+    // let parent_color= parent::Color::Red; //compile error because of private visibility
 
     // //implement trait for struct Pair
-    // impl Greetable for a::Pair {
+    // impl Greetable for parent::Pair {
     //     fn greet(&self) {
     //         println!("Implemented Greetable trait for struct Pair!");
     //     }
     // }
-    // a_pair.greet();  //compile error because of private visibility
+    // parent_pair.greet();  //compile error because of private visibility
     //
-    // //call items of module b
-    // a::b::info(); //compile error because of private visibility
+    // //call items of module parent
+    // parent::nested::info(); //compile error because of private visibility
 
     println!("Module items need public visibility to be accessed from outside the module scope.");
 }
