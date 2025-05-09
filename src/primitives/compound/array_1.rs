@@ -1,4 +1,4 @@
-//1.A primitive compound data type in rust
+//1.a primitive compound data type in rust
 //2.Array is a collection of object of type T.
 //3.Array's length is known at compile.
 //4.Array BNF: let | let mut identifier (:[T;length]=[t..length] | =[t...length | [t1,t2,t3])

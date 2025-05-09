@@ -1,7 +1,7 @@
 use std::convert::From;
 
-//1.In rust, we implement trait 'From' in order to convert a custom type A to custom type B.
-//2.Example : let b:B =B.from(a); where let a:A=value;
+//1.In rust, we implement trait 'From' in order to convert a custom type a to custom type B.
+//2.Example : let b:B =B.from(a); where let a:a=value;
 
 #[derive(Debug)]
 struct Integer(i64);

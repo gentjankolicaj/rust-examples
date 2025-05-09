@@ -10,8 +10,8 @@ Primitive types can be converted to each other through casting.
 
 The 'From' and 'Into' traits are inherently linked, and this is actually part of its implementation.
 
-If you are able to convert type A from type B, then it should be easy to believe that we should be able to convert type
-B to type A.
+If you are able to convert type a from type B, then it should be easy to believe that we should be able to convert type
+B to type a.
 
 - From and Into are interchangeable
 

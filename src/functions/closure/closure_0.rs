@@ -1,6 +1,6 @@
 //1.In rust-lang closures are functions that can capture the enclosing environment.
 //2.Closure BNF: "|" <function_params>  "|" -> <return_type> "{" <function_body> "}"
-//3.A regular function can't refer to variables in the enclosing environment
+//3.a regular function can't refer to variables in the enclosing environment
 
 fn main() {
     let one = 1;

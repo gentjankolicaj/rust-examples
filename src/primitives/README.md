@@ -1,6 +1,6 @@
 ## Primitives
 
-rust-lang provides access to a wide variety of primitives. A sample includes:
+rust-lang provides access to a wide variety of primitives. a sample includes:
 Scalar Types
 
     Signed integers: i8, i16, i32, i64, i128 and isize (pointer size)

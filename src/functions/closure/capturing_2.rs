@@ -7,11 +7,11 @@
 
 fn main() {
     let mut count = 0;
-    // A closure to increment `count` could take either `&mut count` or `count`
+    // a closure to increment `count` could take either `&mut count` or `count`
     // but `&mut count` is less restrictive so it takes that. Immediately
     // borrows `count`.
     //
-    // A `mut` is required on `inc` because a `&mut` is stored inside. Thus,
+    // a `mut` is required on `inc` because a `&mut` is stored inside. Thus,
     // calling the closure mutates `count` which requires a `mut`.
     let mut inc = || {
         count += 1;

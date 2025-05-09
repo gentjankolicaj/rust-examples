@@ -1,4 +1,4 @@
-// A function `age` which returns a `u32`.
+// a function `age` which returns a `u32`.
 fn age() -> u32 {
     15
 }

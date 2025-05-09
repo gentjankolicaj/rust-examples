@@ -5,7 +5,7 @@
 
 ## Destructuring in match
 
-A match block can destructure items in a variety of ways.
+a match block can destructure items in a variety of ways.
 
 - Destructuring Tuples
 - Destructuring Arrays and Slices

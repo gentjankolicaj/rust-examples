@@ -1,4 +1,4 @@
-//1.A tuple is a collection of values of different types.
+//1.a tuple is a collection of values of different types.
 //2.Tuples are constructed using parenthesis.
 //3.Each tuple itself is a value with type signature (T1,T2,T3...) where T1,T2 are types of its members.
 //4.Functions can use tuples to return values as tuples hold any number of values.
@@ -15,7 +15,7 @@ fn reverse_type(arg: (i32, bool)) -> (bool, i32) {
 struct Matrix(f32, f32, f32);
 
 fn main() {
-    // A tuple with a bunch of different types.
+    // a tuple with a bunch of different types.
     let mix_tuple = (
         1u8, 2u16, 3u32, 4u64, -1i8, -2i16, -3i32, -4i64, 0.1f32, 0.2f64, 'a', true,
     );

@@ -7,13 +7,13 @@ struct Person {
     age: u8,
 }
 
-// A unit struct
+// a unit struct
 struct Unit;
 
-// A tuple struct
+// a tuple struct
 struct Pair(i32, f32);
 
-// A struct with two fields
+// a struct with two fields
 struct Point {
     x: f32,
     y: f32,
@@ -21,7 +21,7 @@ struct Point {
 
 // Structs can be reused as fields of another struct
 struct Rectangle {
-    // A rectangle can be specified by where the top left and bottom right
+    // a rectangle can be specified by where the top left and bottom right
     // corners are in space.
     top_left: Point,
     bottom_right: Point,

@@ -1,6 +1,6 @@
 ## Expressions
 
-A rust-lang program is (mostly) made up of a series of statements:
+a rust-lang program is (mostly) made up of a series of statements:
 
 ```
 fn main() {

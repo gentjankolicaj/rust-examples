@@ -1,11 +1,11 @@
 //1.In rust-lang closures are functions that can capture the enclosing environment.
 //2.Closure BNF: "|" <function_params>  "|" -> <return_type> "{" <function_body> "}"
-//3.A regular function can't refer to variables in the enclosing environment
+//3.a regular function can't refer to variables in the enclosing environment
 
 fn main() {
     let outer_var = 42;
 
-    // A regular function can't refer to variables in the enclosing environment
+    // a regular function can't refer to variables in the enclosing environment
     //fn function(i: i32) -> i32 { i + outer_var }
     // uncomment the line above and see the compiler error. The compiler
     // suggests that we define a closure instead.
@@ -24,7 +24,7 @@ fn main() {
     //println!("cannot reuse closure_inferred with another type: {}", closure_inferred(42i64));
     // uncomment the line above and see the compiler error.
 
-    // A closure taking no arguments which returns an `i32`.
+    // a closure taking no arguments which returns an `i32`.
     // The return type is inferred.
     let one = || 1;
     println!("closure returning one: {}", one());

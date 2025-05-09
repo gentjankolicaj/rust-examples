@@ -3,7 +3,7 @@ fn main() {
 
     let color = String::from("green");
 
-    // A closure to print `color` which immediately borrows (`&`) `color` and
+    // a closure to print `color` which immediately borrows (`&`) `color` and
     // stores the borrow and closure in the `print` variable. It will remain
     // borrowed until `print` is used the last time.
     //
@@ -19,15 +19,15 @@ fn main() {
     let _reborrow = &color;
     print();
 
-    // A move or reborrow is allowed after the final use of `print`
+    // a move or reborrow is allowed after the final use of `print`
     let _color_moved = color;
 
     let mut count = 0;
-    // A closure to increment `count` could take either `&mut count` or `count`
+    // a closure to increment `count` could take either `&mut count` or `count`
     // but `&mut count` is less restrictive so it takes that. Immediately
     // borrows `count`.
     //
-    // A `mut` is required on `inc` because a `&mut` is stored inside. Thus,
+    // a `mut` is required on `inc` because a `&mut` is stored inside. Thus,
     // calling the closure mutates `count` which requires a `mut`.
     let mut inc = || {
         count += 1;
@@ -47,12 +47,12 @@ fn main() {
     // possible to reborrow without an error
     let _count_reborrowed = &mut count;
 
-    // A non-copy type.
+    // a non-copy type.
     let movable = Box::new(3);
 
-    // `mem::drop` requires `T` so this must take by value. A copy type
+    // `mem::drop` requires `T` so this must take by value. a copy type
     // would copy into the closure leaving the original untouched.
-    // A non-copy must move and so `movable` immediately moves into
+    // a non-copy must move and so `movable` immediately moves into
     // the closure.
     let consume = || {
         println!("`movable`: {:?}", movable);
