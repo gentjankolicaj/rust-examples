@@ -9,7 +9,10 @@ impl User {
         Self { id: 0, age: 0 }
     }
     fn copy_impl(user: User) -> Self {
-        return User { id: user.id, age: user.age };
+        return User {
+            id: user.id,
+            age: user.age,
+        };
     }
 }
 

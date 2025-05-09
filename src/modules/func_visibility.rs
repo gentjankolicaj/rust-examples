@@ -1,5 +1,5 @@
 //1.In rust-lang by default, the items in a module have private visibility, but this can be overridden with the pub modifier
-//2.In rust-lang 'pub' is a access modifier of items in module { functions, structs, enums, traits, modules )
+//2.In rust-lang 'pub' is an access modifier of items in module { functions, structs, enums, traits, modules )
 //3.In rust-lang only the public items of a module can be accessed from outside the module scope.
 //4.In rust-lang module EBNF:
 // <rust-module> ::= <access-modifier> <module-name> "{" <module-items>+ "}"
