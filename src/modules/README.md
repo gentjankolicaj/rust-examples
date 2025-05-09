@@ -21,3 +21,20 @@ Structs have an extra level of visibility with their fields.
 The visibility defaults to private, and can be overridden with the pub modifier.
 This visibility only matters when a struct is accessed from outside the module where it is defined, and has the goal of
 hiding information (encapsulation).
+
+## use declaration
+
+The use declaration can be used to bind a full path to a new name, for easier access. It is often used like this:
+
+```
+use crate::deeply::nested::{
+    my_first_function,
+    my_second_function,
+    AndATraitType
+};
+
+fn main() {
+    my_first_function();
+}
+```
+
