@@ -1,14 +1,10 @@
 
 
-mod user{
-    pub mod user;
-    pub mod address;
-}
 
-mod dao{
+
     pub mod user_dao;
     pub mod address_dao;
-}
+
 
 
 pub fn create_users(){
@@ -19,6 +15,6 @@ pub fn create_users(){
 }
 
 pub fn create_addresses(){
-    let fist=address::Addresse{zipcode:1,street:"Street 1".to_string()};
-    let second=address::Addresse{zipcode:2,street:"Street 2".to_string()};
+    let fist=address::Address{zipcode:1,street:"Street 1".to_string()};
+    let second=address::Address{zipcode:2,street:"Street 2".to_string()};
 }
