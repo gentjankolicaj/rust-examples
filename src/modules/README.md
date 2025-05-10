@@ -40,11 +40,13 @@ fn main() {
 
 ## super and self
 
-The super and self keywords can be used in the path to remove ambiguity when accessing items and to prevent unnecessary hardcoding of paths.
+The super and self keywords can be used in the path to remove ambiguity when accessing items and to prevent unnecessary
+hardcoding of paths.
 
 ## File hierarchy
 
 Modules can be mapped to a file/directory hierarchy. Let's break down the visibility example in files:
+
 ```
 $ tree .
 .

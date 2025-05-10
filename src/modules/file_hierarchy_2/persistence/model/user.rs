@@ -1,6 +1,5 @@
-
-
-pub struct User{
+#[derive(Debug)]
+pub struct User {
     pub id: u16,
     pub name: String,
 }

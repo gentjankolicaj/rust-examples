@@ -13,12 +13,12 @@ use persistence::user_dao::UserDao;
 
 pub fn create_users() {
     let a = user::User {
-        id: 0,
-        name: "john-doe".to_string(),
+        id: 10,
+        name: "john-doe1".to_string(),
     };
     let b = user::User {
-        id: 1,
-        name: "jane-doe".to_string(),
+        id: 11,
+        name: "jane-doe1".to_string(),
     };
 
     println!("a={:?}", a);
@@ -27,12 +27,12 @@ pub fn create_users() {
 
 pub fn create_addresses() {
     let a = address::Address {
-        zipcode: 1,
-        street: "Street 1".to_string(),
+        zipcode: 11,
+        street: "Street 11".to_string(),
     };
     let b = address::Address {
-        zipcode: 2,
-        street: "Street 2".to_string(),
+        zipcode: 12,
+        street: "Street 12".to_string(),
     };
 
     println!("a={:?}", a);

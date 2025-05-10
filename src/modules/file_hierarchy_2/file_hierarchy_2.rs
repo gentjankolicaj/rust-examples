@@ -4,10 +4,9 @@
 //2.a.Look for a file 'persistence.rs' in current directory
 //2.b.If file not found, look at directory 'persistence' for file mod.rs
 
+mod persistence;
 
-fn main(){
-
+fn main() {
     persistence::create_users();
     persistence::create_addresses();
-
 }

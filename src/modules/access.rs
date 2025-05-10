@@ -2,7 +2,6 @@
 //2.In rust-lang the `self` keyword refers to the current scope.
 //3.In rust-lang the `super` keyword refers to the parent scope.
 
-
 fn function() {
     println!("called `function()`");
 }

@@ -1,6 +1,5 @@
+use persistence::model::address::Address;
 
-
-trait AddressDao {
-    fn find_all()->Vec<Address>;
-
+pub trait AddressDao {
+    fn find_all() -> Vec<Address>;
 }
