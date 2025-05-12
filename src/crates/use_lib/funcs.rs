@@ -1,12 +1,15 @@
+#[derive(Debug)]
 pub struct Mono<T> {
     t: T,
 }
 
+#[derive(Debug)]
 pub struct Di<T, U> {
     t: T,
     u: U,
 }
 
+#[derive(Debug)]
 pub struct Tri<T, U, V> {
     t: T,
     u: U,
