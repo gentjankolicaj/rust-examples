@@ -58,8 +58,8 @@ rustc --crate-type=lib funcs.rs && ls lib*
 rustc --crate-type=lib funcs.rs 
 
 # compile crate 'main.rs' into binary & link library 'libfuncs.rlib'.
-&& rustc main.rs --extern funcs=libfuncs.rlib 
+rustc main.rs --extern funcs=libfuncs.rlib 
 
 # run main binary
-&& ./main
+./main
 ```
