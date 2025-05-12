@@ -5,36 +5,39 @@ Let's create a library, and then see how to link it to another crate.
 ```
 In funcs.rs:
 
-struct Mono<T>{
-    t: T
+#[derive(Debug)]
+pub struct Mono<T> {
+    t: T,
 }
 
-struct Di<T,U>{
+#[derive(Debug)]
+pub struct Di<T, U> {
     t: T,
     u: U,
 }
 
-struct Tri<T,U,V>{
+#[derive(Debug)]
+pub struct Tri<T, U, V> {
     t: T,
-    u:U,
-    v:V,
+    u: U,
+    v: V,
 }
 
-impl<T> Mono<T>{
-    fn new(t: T) -> Mono<T>{
-        Mono{t }
+impl<T> Mono<T> {
+    pub fn new(t: T) -> Mono<T> {
+        Mono { t }
     }
 }
 
-impl<T,U> Di<T,U>{
-    fn new(t: T,u: U) -> Di<T,U>{
-        Di{t,u}
+impl<T, U> Di<T, U> {
+    pub fn new(t: T, u: U) -> Di<T, U> {
+        Di { t, u }
     }
 }
 
-impl<T,U,V> Tri<T,U,V>{
-    fn new(t: T,u:U,v:V) -> Tri<T,U,V>{
-        Tri{t,u,v}
+impl<T, U, V> Tri<T, U, V> {
+    pub fn new(t: T, u: U, v: V) -> Tri<T, U, V> {
+        Tri { t, u, v }
     }
 }
 
