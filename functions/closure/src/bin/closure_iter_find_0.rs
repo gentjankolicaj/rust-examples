@@ -10,22 +10,16 @@ FnOnce: the closure uses the captured value by value (T)
 //4.In rust-lang 'move' keyword when be used, signals that all captures occur by value
 
 fn main() {
-    let mut a_array = [1, 2, 3, 4];
-    //iter() for arrays yields of &i32
+    let a_array = [1, 2, 3, 4];
+    //iter() yields of &i32
     println!(
-        "a_array has 2 by reference : {}",
-        a_array.iter().any(|&x| x == 2)
+        "Find 2 in a_array : {:?}",
+        a_array.iter().find(|&&x| x == 2)
     );
 
-    //into_iter() for arrays yield type i32
+    //into_iter() yield type i32
     println!(
-        "a_array has 2 by value : {}",
-        a_array.into_iter().any(|x| *x == 2)
-    );
-
-    //iter_mut() for yield type &mut i32, thats why we need to deference with '*'
-    println!(
-        "a_array has 2 by reference : {}",
-        a_array.iter_mut().any(|x| *x == 2)
+        "Find 2 in a_array : {:?}",
+        a_array.into_iter().find(|&x| x == 2)
     );
 }

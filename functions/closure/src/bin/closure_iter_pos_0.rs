@@ -15,6 +15,6 @@ fn main() {
     let two_idx = a_array.iter().position(|&x| x == 2);
     println!("two_idx={:?}", two_idx);
 
-    let three_idx = a_array.into_iter().position(|x| *x == 3);
+    let three_idx = a_array.into_iter().position(|x| x == 3);
     println!("three_idx={:?}", three_idx);
 }

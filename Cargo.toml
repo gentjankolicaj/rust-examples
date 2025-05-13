@@ -12,5 +12,15 @@ members = [
     "exe",
     "expression",
     "flow/for_loop",
+    "flow/if_else",
+    "flow/if_let",
+    "flow/loop_loop",
+    "flow/match/binding",
+    "flow/match/destructing",
+    "flow/match/guard",
+    "flow/while_loop",
+    "fmt",
+    "functions",
+    "functions/closure",
     "hello"
 ]

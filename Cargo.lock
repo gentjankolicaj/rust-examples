@@ -7,11 +7,23 @@ name = "array"
 version = "0.1.0"
 
 [[package]]
+name = "binding"
+version = "0.1.0"
+
+[[package]]
 name = "cargo"
 version = "0.1.0"
 
 [[package]]
+name = "closure"
+version = "0.1.0"
+
+[[package]]
 name = "custom_types"
+version = "0.1.0"
+
+[[package]]
+name = "destructing"
 version = "0.1.0"
 
 [[package]]
@@ -23,6 +35,10 @@ name = "expression"
 version = "0.1.0"
 
 [[package]]
+name = "fmt"
+version = "0.1.0"
+
+[[package]]
 name = "for_loop"
 version = "0.1.0"
 
@@ -31,11 +47,31 @@ name = "from"
 version = "0.1.0"
 
 [[package]]
+name = "functions"
+version = "0.1.0"
+
+[[package]]
+name = "guard"
+version = "0.1.0"
+
+[[package]]
 name = "hello"
 version = "0.1.0"
 
 [[package]]
+name = "if_else"
+version = "0.1.0"
+
+[[package]]
+name = "if_let"
+version = "0.1.0"
+
+[[package]]
 name = "into"
+version = "0.1.0"
+
+[[package]]
+name = "loop_loop"
 version = "0.1.0"
 
 [[package]]
@@ -44,4 +80,8 @@ version = "0.1.0"
 
 [[package]]
 name = "try_trait"
+version = "0.1.0"
+
+[[package]]
+name = "while_loop"
 version = "0.1.0"

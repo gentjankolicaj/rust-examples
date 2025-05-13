@@ -20,6 +20,6 @@ fn main() {
     //into_iter() for arrays yield type i32
     println!(
         "a_array has 2 by value : {}",
-        a_array.into_iter().any(|x| *x == 2)
+        a_array.into_iter().any(|x| x == 2)
     );
 }
