@@ -36,6 +36,7 @@
 - [8.1 function closures](/src/functions/closure)
 - [9 modules](/src/modules)
 - [10 creates](/src/crates)
+- [11 cargo](/src/cargo)
 - [a references](/src/references) (Reference samples with different types)
 - [b tricks](/src/tricks) (Programing trick samples)
 - [c exe](/src/exe) (Executable samples)
