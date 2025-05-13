@@ -1,8 +1,16 @@
 # rust-examples
 
-<p>- rust-lang examples to illustrate various rust concepts and standard libs.</p>
-<p>- note: I followed site https://doc.rust-lang.org/rust-by-example during example journey.</p>
-<p>- while most of the examples are mine,here you may find some example copied/mutated originating from https://doc.rust-lang.org/rust-by-example. </p>
+- rust-lang examples to illustrate various rust concepts and standard libs.
+- note: I followed site https://doc.rust-lang.org/rust-by-example during example journey.
+- while most of the examples are mine,here you may find some example copied/mutated originating from https://doc.rust-lang.org/rust-by-example.
+
+```
+
+🧠 Notes
+1.'rust-examples' is a workspace , and each subdirectory is a cargo directory (project folder managed by cargo).
+2. All .rs files in src/bin/ are treated as separate binaries automatically.
+3.If you put multiple files in src/ directly (like main1.rs, main2.rs), Cargo will not pick them up unless you declare them manually with [[bin]].
+```
 
 - [0.0 formatting](/fmt)
 - [1.0 primitives](/primitives)
@@ -19,8 +27,8 @@
 - [5.0 conversion](/conversion)
 - [5.1 conversion trait 'From'](/conversion/from)
 - [5.2 conversion trait 'Into'](/conversion/into)
-- [5.3 conversion traits 'TryFrom & TryInto'](/conversion/try)
-- [5.4 conversion string traits 'ToString, Display, parse(), parse::<Type>() '](/conversion/try)
+- [5.3 conversion traits 'TryFrom & TryInto'](/conversion/try_trait)
+- [5.4 conversion string traits 'ToString, Display, parse(), parse::<Type>() '](/conversion/try_trait)
 - [6.0 expression](/expression)
 - [7.0 flow of control](/flow)
 - [7.1 if else](/flow/if_else)

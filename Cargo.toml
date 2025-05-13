@@ -4,5 +4,9 @@
 members = [
     "array",
     "cargo",
+    "conversion/from",
+    "conversion/into",
+    "conversion/string",
+    "conversion/try_trait",
     "hello"
 ]
