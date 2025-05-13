@@ -32,7 +32,7 @@
 - [6.0 expression](/expression)
 - [7.0 flow of control](/flow)
 - [7.1 if else](/flow/if_else)
-- [7.2 for ](/flow/for)
+- [7.2 for ](/flow/for_loop)
 - [7.3 let ](/flow/let)
 - [7.4 loop ](/flow/loop)
 - [7.5 match ](/flow/match)

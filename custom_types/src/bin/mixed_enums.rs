@@ -1,6 +1,8 @@
 //1.Enum keyword allows for creation of a type which may be one of few variants.
 //2.Any variant which is valid as 'struct' is also valid as enum.
 
+use std::fmt;
+
 enum SwitchButton {
     ON,
     OFF,

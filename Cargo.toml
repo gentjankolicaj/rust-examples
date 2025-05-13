@@ -8,5 +8,9 @@ members = [
     "conversion/into",
     "conversion/string",
     "conversion/try_trait",
+    "custom_types",
+    "exe",
+    "expression",
+    "flow/for_loop",
     "hello"
 ]
