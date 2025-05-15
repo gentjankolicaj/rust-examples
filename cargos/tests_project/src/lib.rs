@@ -1,11 +1,11 @@
-pub mod func_lib {
+pub mod funcs {
 
-    #[derive(Debug)]
+    #[derive(Debug, PartialEq)]
     pub struct Mono<T> {
         pub t: T,
     }
 
-    #[derive(Debug)]
+    #[derive(Debug, PartialEq)]
     pub struct Di<T, U> {
         pub t: T,
         pub u: U,
@@ -22,19 +22,19 @@ pub mod func_lib {
             Di { t, u }
         }
     }
-}
 
-#[cfg(test)]
-mod unit_tests {
-    #[test]
-    fn mono_test() {
-        assert_not_eq!(Mono::new(10), Mono::new(10));
+    #[cfg(test)]
+    mod unit_tests {
+        use crate::funcs::{Di, Mono};
+
+        #[test]
+        fn mono_test() {
+            assert_ne!(Mono::new(10), Mono::new(11));
+        }
+
+        #[test]
+        fn di_test() {
+            assert_ne!(Di::new(10, 0), Di::new(10, 1));
+        }
     }
-
-    #[test]
-    fn di_test() {
-        assert_not_eq!(Di::new(10,0), Di::new(10,0));
-    }
-
 }
-

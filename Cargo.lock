@@ -15,10 +15,6 @@ name = "binding"
 version = "0.1.0"
 
 [[package]]
-name = "cargo"
-version = "0.1.0"
-
-[[package]]
 name = "casting"
 version = "0.1.0"
 
@@ -116,6 +112,10 @@ version = "0.1.0"
 
 [[package]]
 name = "structs"
+version = "0.1.0"
+
+[[package]]
+name = "tests_project"
 version = "0.1.0"
 
 [[package]]

@@ -1,8 +1,12 @@
-mod lib;
+
+
+use tests_project::funcs::Di;
+use tests_project::funcs::Mono;
+
 
 fn main() {
-    let mono = lib::func_lib::Mono::new(10);
-    let di=lib::func_lib::Di::new(11,22);
+    let mono = Mono::new(10);
+    let di = Di::new(11, 22);
     println!("mono={:?}", mono);
     println!("di={:?}", di);
 }
