@@ -3,7 +3,7 @@
 
 members = [
     "array",
-    "cargo",
+    "cargos/tests_project",
     "conversion/from",
     "conversion/into",
     "conversion/string",

@@ -23,4 +23,3 @@ app
 
 - To tell cargo to only compile or run this binary, we just pass cargo the --bin my_other_bin flag, where my_other_bin is the name of the binary we want to work with.
 - In addition to extra binaries, cargo supports more features such as benchmarks, tests, and examples.
-- In the next chapter, we will look more closely at tests.

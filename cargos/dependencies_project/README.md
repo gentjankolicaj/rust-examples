@@ -4,10 +4,10 @@
 
 To create a new Rust project,
 ```
-# A binary
+# A binary project
 cargo new app
 
-# A library
+# A library project
 cargo new --lib utils
 
 ```
