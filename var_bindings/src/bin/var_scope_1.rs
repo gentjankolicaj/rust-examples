@@ -9,7 +9,7 @@
 */
 fn print() {
     let print_block = true;
-    println!("variable-binding print_block={}, exists in print(){} block therefore you can't operate on it from outside print().", print_block);
+    println!("variable-binding print_block={}, exists in print() block therefore you can't operate on it from outside print().", print_block);
 }
 fn main() {
     //variable binding is in main block => main_var visibility in main

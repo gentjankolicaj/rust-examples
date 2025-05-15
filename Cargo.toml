@@ -22,5 +22,22 @@ members = [
     "fmt",
     "functions",
     "functions/closure",
-    "hello"
+    "hello",
+    "primitives",
+    "primitives/compound",
+    "primitives/ops",
+    "primitives/scalar",
+    "references/custom_types",
+    "references/primitive_types",
+    "structs",
+    "tricks",
+    "types",
+    "types/aliasing",
+    "types/casting",
+    "types/inference",
+    "var_bindings",
+    "vector",
+
 ]
+
+

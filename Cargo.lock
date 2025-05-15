@@ -3,6 +3,10 @@
 version = 4
 
 [[package]]
+name = "aliasing"
+version = "0.1.0"
+
+[[package]]
 name = "array"
 version = "0.1.0"
 
@@ -15,7 +19,15 @@ name = "cargo"
 version = "0.1.0"
 
 [[package]]
+name = "casting"
+version = "0.1.0"
+
+[[package]]
 name = "closure"
+version = "0.1.0"
+
+[[package]]
+name = "compound"
 version = "0.1.0"
 
 [[package]]
@@ -67,6 +79,10 @@ name = "if_let"
 version = "0.1.0"
 
 [[package]]
+name = "inference"
+version = "0.1.0"
+
+[[package]]
 name = "into"
 version = "0.1.0"
 
@@ -75,11 +91,51 @@ name = "loop_loop"
 version = "0.1.0"
 
 [[package]]
+name = "ops"
+version = "0.1.0"
+
+[[package]]
+name = "primitives"
+version = "0.1.0"
+
+[[package]]
+name = "ref_custom_types"
+version = "0.1.0"
+
+[[package]]
+name = "ref_primitive_types"
+version = "0.1.0"
+
+[[package]]
+name = "scalar"
+version = "0.1.0"
+
+[[package]]
 name = "string"
 version = "0.1.0"
 
 [[package]]
+name = "structs"
+version = "0.1.0"
+
+[[package]]
+name = "tricks"
+version = "0.1.0"
+
+[[package]]
 name = "try_trait"
+version = "0.1.0"
+
+[[package]]
+name = "types"
+version = "0.1.0"
+
+[[package]]
+name = "var_bindings"
+version = "0.1.0"
+
+[[package]]
+name = "vector"
 version = "0.1.0"
 
 [[package]]

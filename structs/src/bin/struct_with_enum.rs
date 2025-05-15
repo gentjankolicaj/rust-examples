@@ -20,27 +20,29 @@ enum RobotDS {
 }
 
 #[derive(Debug, Copy, Clone)]
-struct Robot {
+struct Robot<'a> {
     id: i64,
     serial: i128,
     switch: Switch,
-    sex: RobotSex,
+    sex: RobotSex<'a>,
     ds: RobotDS,
 }
 
-fn robot_factory() -> &'static [Robot] {
+fn robot_factory<'a>() -> Vec<Robot<'a>> {
     const ROBOT_NUMBER: usize = 10;
-    let mut array: [Robot; ROBOT_NUMBER] = [Robot {
+    let vec:Vec<Robot<'a>> = vec![Robot{
         id: 0i64,
         serial: 0i128,
         switch: Switch::ON,
         sex: RobotSex::FEMALE("female"),
         ds: RobotDS::TREE(1),
-    }; 10];
-    return &array;
+    }];
+    
+    //return vector address value
+     vec
 }
 
 fn main() {
-    let robot_slice = robot_factory();
-    println!("{:?}", robot_slice);
+    let robot_vec = robot_factory();
+    println!("{:?}", robot_vec);
 }
