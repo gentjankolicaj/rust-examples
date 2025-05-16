@@ -3,7 +3,10 @@
 
 members = [
     "array", "attributes",
-    "cargos/tests_project",
+    "cargos/conventions/app",
+    "cargos/dependencies/deps_app",
+    "cargos/dependencies/utils",
+    "cargos/tests",
     "conversion/from",
     "conversion/into",
     "conversion/string",

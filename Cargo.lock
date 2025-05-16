@@ -7,6 +7,10 @@ name = "aliasing"
 version = "0.1.0"
 
 [[package]]
+name = "app"
+version = "0.1.0"
+
+[[package]]
 name = "array"
 version = "0.1.0"
 
@@ -33,6 +37,13 @@ version = "0.1.0"
 [[package]]
 name = "custom_types"
 version = "0.1.0"
+
+[[package]]
+name = "deps_app"
+version = "0.1.0"
+dependencies = [
+ "utils",
+]
 
 [[package]]
 name = "destructing"
@@ -119,7 +130,7 @@ name = "structs"
 version = "0.1.0"
 
 [[package]]
-name = "tests_project"
+name = "tests"
 version = "0.1.0"
 
 [[package]]
@@ -132,6 +143,10 @@ version = "0.1.0"
 
 [[package]]
 name = "types"
+version = "0.1.0"
+
+[[package]]
+name = "utils"
 version = "0.1.0"
 
 [[package]]

@@ -1,7 +1,7 @@
 
 
-use tests_project::funcs::Di;
-use tests_project::funcs::Mono;
+use tests::funcs::Di;
+use tests::funcs::Mono;
 
 
 fn main() {

@@ -6,10 +6,12 @@ struct A;
 
 //tuple struct
 #[derive(Debug)]
+#[allow(dead_code)]
 struct B(i32, i32);
 
 //named field struct
 #[derive(Debug)]
+#[allow(dead_code)]
 struct C {
     i: i32,
     j: i32,
