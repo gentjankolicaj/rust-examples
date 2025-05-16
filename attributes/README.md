@@ -45,3 +45,63 @@ Attributes can have multiple values and can be separated over multiple lines, to
 
 - **#[attribute(value, value2)]**
 - **#[attribute(value, value2, value3,value4, value5)]**
+
+--- 
+
+## dead_code
+- The compiler provides a dead_code lint that will warn about unused functions.
+- An attribute can be used to disable the lint.
+
+```
+fn used_function() {}
+
+// `#[allow(dead_code)]` is an attribute that disables the `dead_code` lint
+#[allow(dead_code)]
+fn unused_function() {}
+
+fn noisy_unused_function() {}
+// FIXME ^ Add an attribute to suppress the warning
+
+fn main() {
+    used_function();
+}
+```
+- Note that in real programs, you should eliminate dead code. 
+- In these examples we'll allow dead code in some places because of the interactive nature of the examples.
+
+
+---
+
+## Crates
+- The crate_type attribute can be used to tell the compiler whether a crate is a binary or a library (and even which type of library), and the crate_name attribute can be used to set the name of the crate.
+- However, it is important to note that both the crate_type and crate_name attributes have no effect whatsoever when using Cargo, the Rust package manager. 
+- Since Cargo is used for the majority of Rust projects, this means real-world uses of crate_type and crate_name are relatively limited.
+
+```
+// This crate is a library
+#![crate_type = "lib"]
+
+// The library is named "rary"
+#![crate_name = "rary"]
+
+pub fn public_function() {
+    println!("called rary's `public_function()`");
+}
+
+fn private_function() {
+    println!("called rary's `private_function()`");
+}
+
+pub fn indirect_access() {
+    print!("called rary's `indirect_access()`, that\n> ");
+
+    private_function();
+}
+```
+
+- When the crate_type attribute is used, we no longer need to pass the --crate-type flag to rustc.
+```
+$ rustc lib.rs
+$ ls lib*
+library.rlib
+```
