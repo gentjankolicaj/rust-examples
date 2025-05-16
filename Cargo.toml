@@ -2,7 +2,7 @@
 [workspace]
 
 members = [
-    "array",
+    "array", "attributes",
     "cargos/tests_project",
     "conversion/from",
     "conversion/into",
