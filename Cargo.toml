@@ -24,7 +24,7 @@ members = [
     "flow/while_loop",
     "fmt",
     "functions",
-    "functions/closure",
+    "functions/closure", "generics",
     "hello",
     "primitives",
     "primitives/compound",

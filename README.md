@@ -54,6 +54,7 @@
 - [11.1 cargo dependencies](/cargos/dependencies)
 - [11.2 cargo conventions](/cargos/conventions)
 - [11.3 cargo tests](/cargos/tests_project)
+- [12 generics](/generics)
 - [a references](/references) (Reference samples with different types)
 - [b tricks](/tricks) (Programing trick samples)
 - [c exe](/exe) (Executable samples)
