@@ -2,8 +2,8 @@
 
 #![allow(dead_code)]
 
-struct A;          // Concrete type `A`.
-struct S(A);       // Concrete type `S`.
+struct A; // Concrete type `A`.
+struct S(A); // Concrete type `S`.
 struct SGen<T>(T); // Generic type `SGen`.
 
 // The following functions all take ownership of the variable passed into
@@ -29,8 +29,8 @@ fn generic<T>(_s: SGen<T>) {}
 
 fn main() {
     // Using the non-generic functions
-    reg_fn(S(A));          // Concrete type.
-    gen_spec_t(SGen(A));   // Implicitly specified type parameter `A`.
+    reg_fn(S(A)); // Concrete type.
+    gen_spec_t(SGen(A)); // Implicitly specified type parameter `A`.
     gen_spec_i32(SGen(6)); // Implicitly specified type parameter `i32`.
 
     // Explicitly specified type parameter `char` to `generic()`.
@@ -39,4 +39,3 @@ fn main() {
     // Implicitly specified type parameter `char` to `generic()`.
     generic(SGen('c'));
 }
-
