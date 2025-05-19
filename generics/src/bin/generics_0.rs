@@ -1,5 +1,6 @@
+//1.In rust-lang <T> declaration implies that T is generic type.
 
-#[allow(dead_code)]
+#![allow(dead_code)]
 
 //Define unit-struct T
 #[derive(Debug)]
@@ -8,6 +9,7 @@ struct T;
 //Define tuple-struct Mono(T)
 #[derive(Debug)]
 struct Mono(T);
+
 
 //Define named-field-struct Di
 #[derive(Debug)]
@@ -24,16 +26,16 @@ fn generic_print<A: std::fmt::Debug>(arg:A){
 }
 
 fn main(){
-    
+
     //instantiated T
     let unit=T;
-    
+
     //instantiated T and passed address value at Mono which is then instantiated
     let tuple=Mono(T);
-    
+
     //Inside {} instantiated 2 times T
     let named=Di{first:T, second:Mono(T)};
-    
+
     generic_print(unit);
     generic_print(tuple);
     generic_print(named);
