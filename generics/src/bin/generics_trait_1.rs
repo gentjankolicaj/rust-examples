@@ -24,5 +24,4 @@ fn main() {
 
     //call trait Mono, method 'value()' of a generic type
     a0.value();
-    
 }
